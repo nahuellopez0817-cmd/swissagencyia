@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SWISS AGENCY IA - LA PEOR WEB</title>
+  <style>
+    /* Objetivo: hacerla DELIBERADAMENTE MUY FEA */
+    /* 1) Colores que chocan y texto difícil de leer */
+    body{
+      margin:0; padding:0;
+      background-image: repeating-linear-gradient(45deg, #ff00ff 0 20px, #00ff00 20px 40px);
+      font-family: "Comic Sans MS", Impact, Papyrus, cursive;
+      color:#00ffff;
+      cursor: crosshair;
+    }
+    /* 2) Títulos gigantes con text-shadow exagerado */
+    h1{
+      font-size:64px; text-align:center; margin: 18px 0 6px;
+      color:#ffff00; text-shadow: 8px 8px 0 #000, -6px -6px 0 #ff00ff;
+      letter-spacing:6px; text-transform:uppercase; border: 10px double #00ffff; background:#000;
+    }
+    /* 3) Parpadeo simulando <blink> */
+    @keyframes blink { 50%{opacity:0;} }
+    .blink{ animation: blink .6s steps(1) infinite; }
+    /* 4) Marquee horrendo */
+    marquee{ font-size:24px; font-weight:900; background:lime; color:#000; border:8px ridge red; }
+    /* 5) Diseño con tabla (anti-UX) */
+    table.layout{ width:100%; border-collapse:separate; border-spacing:18px; }
+    td{ background:#0000ff; border:8px groove #ff0; padding:14px; vertical-align:top; }
+    /* 6) Botones 3D con degradés violentos */
+    .btn{
+      display:inline-block; padding:16px 24px; font-weight:900; text-decoration:none; color:#fff;
+      background: linear-gradient(0deg, #ff0000, #ffa500);
+      border:6px outset #00ffea; box-shadow: 0 0 30px #fff, inset 0 0 10px #000;
+      transform: skewX(-12deg);
+    }
+    .btn:hover{ filter: hue-rotate(180deg) saturate(2); }
+    /* 7) Caja de texto multicolores con bordes punteados y subrayados aleatorios */
+    .caja{
+      background: repeating-linear-gradient(90deg, rgba(255,255,255,.1) 0 10px, rgba(0,0,0,.4) 10px 20px);
+      border: 12px dotted #ff00ff; outline: 10px dashed #00ff00; text-decoration: underline wavy #ff0;
+      padding: 20px; color:#fff; font-size:22px; line-height:1.1; transform: rotate(-0.8deg);
+    }
+    /* 8) GIF falso (cuadro parpadeante) */
+    .fake-gif{ width:100%; height:120px; background:conic-gradient(from 0deg, red, yellow, lime, cyan, blue, magenta, red);
+      animation: spin 1.2s linear infinite; border: 12px inset #fff; }
+    @keyframes spin { to{ transform:rotate(360deg); } }
+    /* 9) Inputs gigantes y mal alineados */
+    input, textarea{ width: 100%; font-size:26px; background:#ff00ff; color:#00ff00; border: 8px solid #00ffff; }
+    label{ font-size:28px; font-weight:900; background:#ffff00; color:#000; padding:4px 8px; display:inline-block; transform:skewY(-6deg); }
+    /* 10) Footer con contadores falsos */
+    .footer{ text-align:center; padding:18px; background:#000; color:#0ff; border-top:12px double #f0f; }
+    .bad-shadow{ text-shadow:0 0 6px #0ff, 0 0 18px #f0f, 0 0 30px #ff0; }
+    .center { text-align:center; }
+    .rot{ transform: rotate(1.8deg); }
+  </style>
+</head>
+<body>
+  <marquee scrollamount="22">💥 OFERTA IMPERDIBLE 💥 WEBS HECHAS CON IA 💥 99% MÁS FEAS QUE TU ENLACE DE IG 💥</marquee>
+
+  <h1 class="blink">Swiss Agency IA</h1>
+
+  <table class="layout">
+    <tr>
+      <td>
+        <div class="caja">
+          <h2 class="bad-shadow">¿QUIERES UNA WEB FEA? ¡SOMOS N°1!</h2>
+          <p>Hacemos páginas <b>exageradamente</b> feas para que <i>valores</i> lo que es una landing decente. Perfecto para comparativas en TikTok, para que tus clientes digan: “ok, ¡necesito la versión pro!”.</p>
+          <ul>
+            <li>Fondos que lastiman la vista 👁️‍🗨️</li>
+            <li>Fuentes imposibles de leer ✍️</li>
+            <li>Botones que parecen de 1998 🧱</li>
+          </ul>
+          <div class="center">
+            <a class="btn" href="https://wa.me/5491151642108?text=Quiero%20mi%20web%20FEA%20de%20ejemplo" target="_blank" rel="noopener">PEDIR MI WEB FEA YA</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="fake-gif" aria-label="gif-psicodelico"></div>
+        <div class="caja rot" style="margin-top:12px">
+          <h3>ENLACE HORRIBLE (DE EJEMPLO)</h3>
+          <p><code>https://instagram.com/miemprendimiento1234567890?igshid=YzA1NzM5OTY=</code></p>
+          <p>—> Así se ve “antes” en tu video. Luego cortás al “después” (nuestra landing pro). 😎</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="caja">
+          <h2>FORMULARIO MAL DISEÑADO</h2>
+          <label>Nombre raro:</label>
+          <input placeholder="Ej: El Pepe de la Web" />
+          <label>Correo que no se entiende:</label>
+          <input placeholder="ponen_lo_que_sea@lo_que_sea.com" />
+          <label>Mensaje con gritos:</label>
+          <textarea rows="4">QUIERO UNA WEB FEA PARA MI TIKTOK!!!</textarea>
+          <div class="center" style="margin-top:10px">
+            <a class="btn" href="#" onclick="alert('Enviado (?)'); return false;">ENVIARETE</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="caja">
+          <h2>TESTIMONIOS DUDOSOS ⭐</h2>
+          <p>“La peor web que vi en mi vida. 10/10.” — <i>Mi primo</i></p>
+          <p>“Ahora mis clientes aprecian la versión pro.” — <i>Alguien del barrio</i></p>
+          <p>“Me sangraron los ojos pero vendí más.” — <i>Persona real (creo)</i></p>
+          <div class="center" style="margin-top:10px">
+            <span class="bad-shadow">👁️ Visitantes: <span id="counter">0</span> (totalmente real)</span>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    <p class="blink">© 2025 SWISS AGENCY IA — “Si es fea, funciona para comparar”.</p>
+    <p>
+      <a class="btn" href="mailto:nahuellopez0817@gmail.com">EMAIL</a>
+      <a class="btn" href="https://wa.me/5491151642108" target="_blank" rel="noopener">WHATSAPP</a>
+      <a class="btn" href="#" onclick="document.body.style.backgroundImage='none'; alert('Ahora está aún peor: sin fondo 🤡'); return false;">EMPEORAR FONDO</a>
+    </p>
+  </div>
+
+  <script>
+    // Contador falso que sube sin sentido
+    let c = Math.floor(Math.random()*5000)+1234;
+    setInterval(()=>{ c += Math.floor(Math.random()*9)+1; document.getElementById('counter').textContent = c.toLocaleString('es-AR'); }, 800);
+  </script>
+</body>
+</html>
